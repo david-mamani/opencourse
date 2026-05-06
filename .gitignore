@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Course data (generated at runtime)
+*.progress.json
+course.json
+
+# App config
+.opencourse/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Thumbnails cache
+opencourse-thumbs/
+
+# Logs
+*.log
+npm-debug.log*

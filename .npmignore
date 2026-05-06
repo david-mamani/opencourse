@@ -1,0 +1,11 @@
+# Ignore test files
+tests/
+
+# Ignore development files
+.gitignore
+CHANGELOG.md
+CONTRIBUTING.md
+.github/
+
+# Ignore source maps
+*.map
