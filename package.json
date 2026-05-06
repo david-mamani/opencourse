@@ -1,6 +1,6 @@
 {
   "name": "opencourse",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Offline Course Player for the Terminal — auto-scan, progress tracking, quizzes, and a ghost mascot.",
   "type": "module",
   "main": "dist/index.js",

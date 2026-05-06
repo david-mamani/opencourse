@@ -37,7 +37,7 @@ export function openVideo(filePath: string): VideoProcess {
   const vlc = findVlc();
 
   if (vlc) {
-    const proc = spawn(vlc, [resolved], { detached: true, stdio: 'ignore', windowsHide: true });
+    const proc = spawn(vlc, [resolved], { detached: true, stdio: 'ignore' });
     return { playerName: 'VLC', process: proc };
   } else {
     const proc = spawn('cmd', ['/c', 'start', '/wait', '', resolved], { detached: false, stdio: 'ignore', windowsHide: true });
