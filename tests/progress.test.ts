@@ -20,7 +20,8 @@ import {
 } from '../src/engines/progress.js';
 import type { CourseData } from '../src/types/course.js';
 
-const TEST_ROOT = path.join(os.tmpdir(), `oc-test-progress-${Date.now()}`);
+const TEST_ROOT = path.join(os.tmpdir(), `oc-test-progress-${Date.now()}-${Math.random().toString(36).slice(2)}`);
+let testCounter = 0;
 
 function mkdirp(p: string) { fs.mkdirSync(p, { recursive: true }); }
 function cleanup() { fs.rmSync(TEST_ROOT, { recursive: true, force: true }); }
@@ -60,7 +61,7 @@ describe('Progress Engine', () => {
   after(() => cleanup());
 
   beforeEach(() => {
-    coursePath = path.join(TEST_ROOT, `course-${Date.now()}`);
+    coursePath = path.join(TEST_ROOT, `course-${++testCounter}`);
     mkdirp(coursePath);
   });
 
