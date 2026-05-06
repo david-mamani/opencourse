@@ -11,7 +11,7 @@
     "build": "tsc",
     "start": "tsx src/index.tsx",
     "dev": "tsx watch src/index.tsx",
-    "test": "tsx --test tests/*.test.ts",
+    "test": "tsx --test tests/shared.test.ts tests/renderer.test.ts tests/scanner.test.ts tests/progress.test.ts",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
